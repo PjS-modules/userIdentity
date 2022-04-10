@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>main.qml</file>
+
+        <file>../src/qml/qmldir</file>
+
+        <file>../src/qml/Texts_Authorization.qml</file>
+        <file>../src/qml/Style_Authorization.qml</file>
+
+        <file>../src/qml/pages/AuthorizationPage.qml</file>
+        <file>../src/qml/pages/AuthorizationPageUI.ui.qml</file>
+        <file>../src/qml/pages/LoginPage.qml</file>
+        <file>../src/qml/pages/LoginPageUI.ui.qml</file>
+        <file>../src/qml/pages/RegisterPage.qml</file>
+        <file>../src/qml/pages/RegisterPageUI.ui.qml</file>
+    </qresource>
+</RCC>

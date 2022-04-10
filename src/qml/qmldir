@@ -1,0 +1,12 @@
+module Authorization
+
+singleton Texts_Authorization Texts_Authorization.qml
+singleton Style_Authorization Style_Authorization.qml
+
+
+AuthorizationPage 1.0 pages/AuthorizationPage.qml
+AuthorizationPageUI 1.0 pages/AuthorizationPageUI.ui.qml
+LoginPage 1.0 pages/LoginPage.qml
+LoginPageUI 1.0 pages/LoginPageUI.ui.qml
+RegisterPage 1.0 pages/RegisterPage.qml
+RegisterPageUI 1.0 pages/RegisterPageUI.ui.qml
