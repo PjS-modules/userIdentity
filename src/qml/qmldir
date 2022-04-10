@@ -1,7 +1,7 @@
 module Authentication
 
-singleton Texts_Authorization Texts_Authorization.qml
-singleton Style_Authorization Style_Authorization.qml
+singleton Texts_UserIdentity Texts_UserIdentity.qml
+singleton Style_UserIdentity Style_UserIdentity.qml
 
 
 AuthenticationBlock pages/AuthenticationBlock.qml

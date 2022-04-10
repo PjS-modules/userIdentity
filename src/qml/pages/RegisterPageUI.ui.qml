@@ -37,7 +37,7 @@ Item {
                 width: 80
                 height: 20
 
-                placeholderText: Texts_Authorization.registerPage.registerNameInput
+                placeholderText: Texts_UserIdentity.registerPage.registerNameInput
             }
         }
 
@@ -48,7 +48,7 @@ Item {
                 width: 80
                 height: 20
 
-                placeholderText: Texts_Authorization.registerPage.registerPassInput
+                placeholderText: Texts_UserIdentity.registerPage.registerPassInput
             }
         }
 
@@ -60,12 +60,12 @@ Item {
 
             Button {
                 id: registerAccountButton
-                text: Texts_Authorization.registerPage.registerAccountButton
+                text: Texts_UserIdentity.registerPage.registerAccountButton
             }
 
             Button {
                 id: cancelRegisterButton
-                text: Texts_Authorization.registerPage.cancelRegisterButton
+                text: Texts_UserIdentity.registerPage.cancelRegisterButton
             }
 
         }

@@ -32,7 +32,7 @@ Item {
             id: loginNameInput
             width: 80
             height: 20
-            placeholderText: Texts_Authorization.titlebar
+            placeholderText: Texts_UserIdentity.titlebar
             font.pixelSize: 12
         }
 
@@ -40,7 +40,7 @@ Item {
             id: loginPassInput
             width: 80
             height: 20
-            placeholderText: Texts_Authorization.loginPage.passInputPlaceholder
+            placeholderText: Texts_UserIdentity.loginPage.passInputPlaceholder
             font.pixelSize: 12
         }
 
@@ -51,12 +51,12 @@ Item {
 
             Button {
                 id: loginButton
-                text: Texts_Authorization.loginPage.loginButton
+                text: Texts_UserIdentity.loginPage.loginButton
             }
 
             Button {
                 id: registerButton
-                text: Texts_Authorization.loginPage.registerButton
+                text: Texts_UserIdentity.loginPage.registerButton
             }
         }
     }
