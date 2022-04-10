@@ -1,5 +1,5 @@
 /*
- * Authorization page.
+ * Authentication block.
  *
  * This file is part of PjS Project.
  * All rights reserved , distributed under GPLv3+ ,
@@ -12,7 +12,7 @@ import QtQuick.Controls
 
 
 Item {
-    id: authorizationPage
+    id: authenticationBlock
 
     anchors.fill: parent
 

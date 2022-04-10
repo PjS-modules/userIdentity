@@ -19,7 +19,7 @@ ApplicationWindow {
     width: 500
     height: 700
 
-    AuthorizationPage {
+    AuthenticationBlock {
         anchors.fill: parent
 
         clip: true

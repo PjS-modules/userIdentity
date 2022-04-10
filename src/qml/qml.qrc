@@ -3,9 +3,7 @@
         <file>qmldir</file>
         <file>Texts_Authorization.qml</file>
         <file>Style_Authorization.qml</file>
-
-        <file>pages/AuthorizationPage.qml</file>
-        <file>pages/AuthorizationPageUI.ui.qml</file>
+        <file>pages/AuthenticationBlock.qml</file>
         <file>pages/LoginPage.qml</file>
         <file>pages/LoginPageUI.ui.qml</file>
         <file>pages/RegisterPage.qml</file>
