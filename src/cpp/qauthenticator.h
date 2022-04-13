@@ -12,9 +12,12 @@
 
 
 #include <QObject>
+#include <QString>
 
 #include "authenticator.h"
 
+
+using QTROSTRING = const QString;
 
 class QAuthenticator : public QObject{
     Q_OBJECT
@@ -23,7 +26,7 @@ public:
     explicit QAuthenticator(QObject *parent = nullptr);
 
     Q_INVOKABLE
-    HASH authenticate(HASH loginPass);
+    ID_TOKEN authenticate(QTROSTRING login, QTROSTRING pass);
 signals:
 
 };

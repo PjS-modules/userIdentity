@@ -26,8 +26,7 @@ LoginPageUI {
 
     loginButton.onClicked: {
         loginAccepted()
-        console.log("!!")
-        console.log(Authenticator.authenticate(32))
+        console.log(Authenticator.authenticate(loginNameInput.text,loginPassInput.text))
     }
 
     registerButton.onClicked: {

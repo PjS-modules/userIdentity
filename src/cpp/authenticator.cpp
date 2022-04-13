@@ -15,8 +15,9 @@ Authenticator::Authenticator(){
 }
 
 
-HASH Authenticator::authenticate(HASH loginPass){
-    return 42;
+ID_TOKEN Authenticator::authenticate(ROSTRING login, ROSTRING pass){
+
+    return login.size() + pass.size();
 }
 
 

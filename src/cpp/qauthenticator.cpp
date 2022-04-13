@@ -16,7 +16,7 @@ QAuthenticator::QAuthenticator(QObject *parent)
 }
 
 
-HASH QAuthenticator::authenticate(HASH loginPass){
+ID_TOKEN QAuthenticator::authenticate(QTROSTRING login, QTROSTRING pass){
     Authenticator temp;
-    return temp.authenticate(loginPass);
+    return temp.authenticate(login.toStdString(),pass.toStdString());
 }

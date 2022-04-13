@@ -10,13 +10,18 @@
 #ifndef AUTHENTICATOR_H
 #define AUTHENTICATOR_H
 
-using HASH = int;
+#include <string>
+
+using ID_TOKEN = int;
+using ROSTRING = const std::string;
+
+
 class Authenticator {
 public:
 
     Authenticator();
 
-    HASH authenticate(HASH loginPass);
+    ID_TOKEN authenticate(ROSTRING login, ROSTRING pass);
 };
 
 
