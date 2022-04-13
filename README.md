@@ -9,7 +9,7 @@ Module contains all elements to be used for user:
 API: signals:
 
     loginAccepted
-    loginFailedWrongLogin
+    loginFailedWrongName
     loginFailedWrongPass
     loginRegistrationCompleted
     loginRegistrationWrongName

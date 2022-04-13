@@ -11,6 +11,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
+#include "../src/cpp/qauthenticator.h"
 #include "tests.h"
 
 
@@ -32,9 +33,7 @@ int protected_main(int argc, char *argv[]){
     const QUrl qmlPath("qrc:/main.qml");
 
     /* objects */
-    //AccountRegister* accountRegister = new AccountRegister();
-    //Agent* agent = new Agent();
-    //AppsList* appslist = new AppsList();
+    QAuthenticator* qauthenticator = new QAuthenticator();
 
     /* Configure gui */
     QGuiApplication app(argc, argv);
@@ -42,8 +41,7 @@ int protected_main(int argc, char *argv[]){
 
     /* Configure qml */
     QQmlApplicationEngine engine;
-    //engine.rootContext()->setContextProperty("AccountRegister", accountRegister);
-    //engine.rootContext()->setContextProperty("AppsList", appslist);
+    engine.rootContext()->setContextProperty("Authenticator", qauthenticator);
 
     engine.addImportPath(QStringLiteral("qrc:/../src/qml/"));
 

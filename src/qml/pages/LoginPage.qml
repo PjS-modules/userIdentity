@@ -14,12 +14,20 @@ LoginPageUI {
 
     // external API signals
     signal loginAccepted
+    signal loginFailedWrongName
+    signal loginFailedWrongPass
+
+    signal loginRegistrationCompleted
+    signal loginRegistrationWrongName
+    signal loginRegistrationWrongPass
 
     // local signals
     signal goToRegisterPage
 
     loginButton.onClicked: {
         loginAccepted()
+        console.log("!!")
+        console.log(Authenticator.authenticate(32))
     }
 
     registerButton.onClicked: {

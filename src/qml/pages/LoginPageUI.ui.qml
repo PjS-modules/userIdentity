@@ -25,7 +25,6 @@ Item {
 
     ColumnLayout {
 
-        //anchors.fill: parent
         anchors.centerIn: parent
 
         TextField {

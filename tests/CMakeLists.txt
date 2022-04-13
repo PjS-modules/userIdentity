@@ -26,6 +26,10 @@ set(PROJECT_SOURCES
     tests.h
 
     qml.qrc
+    ../src/cpp/authenticator.h
+    ../src/cpp/authenticator.cpp
+    ../src/cpp/qauthenticator.h
+    ../src/cpp/qauthenticator.cpp
     ../src/cpp/login.h
     ../src/cpp/registration.h
 
