@@ -29,4 +29,5 @@ Item {
             id: registerPage
         }
     }
+
 }

@@ -25,8 +25,13 @@ LoginPageUI {
     signal goToRegisterPage
 
     loginButton.onClicked: {
-        loginAccepted()
-        console.log(Authenticator.authenticate(loginNameInput.text,loginPassInput.text))
+        // TO-DO:
+        var id_token = Authenticator.authenticate(loginNameInput.text,loginPassInput.text);
+        if (id_token !== 0){
+            loginAccepted()
+            console.log(id_token);
+        }
+
     }
 
     registerButton.onClicked: {

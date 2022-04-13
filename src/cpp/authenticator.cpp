@@ -16,7 +16,7 @@ Authenticator::Authenticator(){
 
 
 ID_TOKEN Authenticator::authenticate(ROSTRING login, ROSTRING pass){
-
+    // TO-DO: code
     return login.size() + pass.size();
 }
 
