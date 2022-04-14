@@ -24,10 +24,18 @@ Item {
 
         LoginPage{
             id: loginPage
+            anchors.fill: parent
         }
         RegisterPage{
             id: registerPage
         }
     }
 
+    Connections {
+        target: loginPage
+
+        function onGoToRegisterPage() {
+            console.log("out")
+        }
+    }
 }

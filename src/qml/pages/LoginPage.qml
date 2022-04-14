@@ -13,28 +13,45 @@ import QtQuick
 LoginPageUI {
 
     // external API signals
-    signal loginAccepted
-    signal loginFailedWrongName
-    signal loginFailedWrongPass
 
-    signal loginRegistrationCompleted
-    signal loginRegistrationWrongName
-    signal loginRegistrationWrongPass
+    signal authorizationAccepted
+
+    signal returnFromAuthentication
 
     // local signals
+
+    signal authorizationFailedWrongName
+    signal authorizationFailedWrongPass
+
+    signal authorizationRegistrationCompleted
+    signal authorizationRegistrationWrongName
+    signal authorizationRegistrationWrongPass
+
     signal goToRegisterPage
 
-    loginButton.onClicked: {
+    //
+
+    authorizationLoginButton.onClicked: {
         // TO-DO:
-        var id_token = Authenticator.authenticate(loginNameInput.text,loginPassInput.text);
+        if (authorizationNameInput.text === ""){
+            authorizationFailedWrongName()}
+        if (authorizationPassInput.text === ""){
+            authorizationFailedWrongPass()}
+
+        var id_token = Authenticator.authenticate(authorizationNameInput.text,authorizationPassInput.text);
         if (id_token !== 0){
             loginAccepted()
-            console.log(id_token);
+            //
+
         }
 
     }
 
-    registerButton.onClicked: {
+    authorizationRegisterButton.onClicked: {
         goToRegisterPage()
+    }
+
+    Keys.onEscapePressed: {
+        returnFromAuthentication()
     }
 }

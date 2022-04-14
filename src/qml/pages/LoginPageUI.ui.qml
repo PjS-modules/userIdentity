@@ -16,10 +16,10 @@ import "../"
 
 Item {
 
-    property alias loginNameInput : loginNameInput
-    property alias loginPassInput : loginPassInput
-    property alias loginButton : loginButton
-    property alias registerButton : registerButton
+    property alias authorizationNameInput : authorizationNameInput
+    property alias authorizationPassInput : authorizationPassInput
+    property alias authorizationLoginButton : authorizationLoginButton
+    property alias authorizationRegisterButton : authorizationRegisterButton
 
     clip: true
 
@@ -28,7 +28,7 @@ Item {
         anchors.centerIn: parent
 
         TextField {
-            id: loginNameInput
+            id: authorizationNameInput
             width: 80
             height: 20
             placeholderText: Texts_UserIdentity.titlebar
@@ -36,7 +36,7 @@ Item {
         }
 
         TextField {
-            id: loginPassInput
+            id: authorizationPassInput
             width: 80
             height: 20
             placeholderText: Texts_UserIdentity.loginPage.passInputPlaceholder
@@ -49,12 +49,12 @@ Item {
             height: 100
 
             Button {
-                id: loginButton
+                id: authorizationLoginButton
                 text: Texts_UserIdentity.loginPage.loginButton
             }
 
             Button {
-                id: registerButton
+                id: authorizationRegisterButton
                 text: Texts_UserIdentity.loginPage.registerButton
             }
         }
