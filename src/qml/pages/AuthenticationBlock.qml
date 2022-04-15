@@ -12,6 +12,7 @@ import QtQuick.Controls
 
 
 Item {
+
     id: authenticationBlock
 
     anchors.fill: parent
@@ -24,8 +25,8 @@ Item {
 
         LoginPage{
             id: loginPage
-            anchors.fill: parent
         }
+        
         RegisterPage{
             id: registerPage
         }
@@ -35,7 +36,16 @@ Item {
         target: loginPage
 
         function onGoToRegisterPage() {
-            console.log("out")
+            authorizationStack.push(registerPage)
         }
     }
+
+    Connections {
+        target: registerPage
+
+        function onReturnFromRegister() {
+            authorizationStack.pop()
+        }
+    }
+
 }

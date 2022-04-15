@@ -12,8 +12,6 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import "../"
-//import "../components"
-//import "../pages"
 
 
 Item {

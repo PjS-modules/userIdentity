@@ -17,19 +17,16 @@ RegisterPageUI {
     function clearValuesAndReturn(){
         registerNameInput.text = ""
         registerPassInput.text = ""
+        returnFromRegister()
     }
     
     function errorHandler(){
-        //if ()
-    }
-
-    Keys.onEscapePressed: {
-        clearValuesAndReturn()
+        //
     }
 
     registerAccountButton.onClicked: {
-        AccountRegister.setUsername(registerNameInput.text);
-        AccountRegister.setPassword(registerPassInput.text);
+        //AccountRegister.setUsername(registerNameInput.text);
+        //AccountRegister.setPassword(registerPassInput.text);
         if (AccountRegister.registerAccount()){
            clearValuesAndReturn()
         }
@@ -42,4 +39,7 @@ RegisterPageUI {
         clearValuesAndReturn()
     }
 
+    Keys.onEscapePressed: {
+        clearValuesAndReturn()
+    }
 }
