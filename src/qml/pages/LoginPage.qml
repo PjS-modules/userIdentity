@@ -31,27 +31,39 @@ LoginPageUI {
 
     //
 
+    function clearAuthorizationValues(){
+        authorizationNameInput.text = ""
+        authorizationPassInput.text = ""
+    }
+
     authorizationLoginButton.onClicked: {
-        // TO-DO:
-        if (authorizationNameInput.text === ""){
-            authorizationFailedWrongName()}
-        if (authorizationPassInput.text === ""){
-            authorizationFailedWrongPass()}
+        // TO-DO: CODE REAL SOLUTION
 
-        var id_token = Authenticator.authenticate(authorizationNameInput.text,authorizationPassInput.text);
+        var id_token = Authenticator.authenticate(authorizationNameInput.text,
+                                                  authorizationPassInput.text);
         if (id_token !== 0){
-            loginAccepted()
-            //
-
+            clearAuthorizationValues()
+            authorizationAccepted()
         }
-
+        else {
+            if (authorizationNameInput.text === ""){
+                authorizationFailedWrongName()
+                clearAuthorizationValues()
+            }
+            if (authorizationPassInput.text === ""){
+                authorizationFailedWrongPass()
+                clearAuthorizationValues()
+            }
+        }
     }
 
     authorizationRegisterButton.onClicked: {
+        clearAuthorizationValues()
         goToRegisterPage()
     }
 
     Keys.onEscapePressed: {
+        clearAuthorizationValues()
         returnFromAuthentication()
     }
 }
